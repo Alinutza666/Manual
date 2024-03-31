@@ -1,0 +1,197 @@
+.pagini.web .pagina{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+}
+.pagini.doubleView {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+.pagina{
+    margin: 1rem auto;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 66;
+}
+.menu{
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 0 2px -1px rgba(0,0,0,.5);
+    position: fixed;
+    padding: 1rem;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+    height: fit-content;
+    z-index:666;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.menu ul li{
+    margin: .5rem 0;
+    border-radius: 5px;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: var(--turquoise);
+    text-align: center;
+}
+.menu ul li.active{
+    background: var(--orange);
+}
+.menu ul li:hover{
+    background-color: var(--orange);
+}
+.menu ul li i{
+    color:white;
+    font-size: 20px;
+}
+.page-info.flex > *{
+    flex-grow: 1;
+    padding: 2rem 1rem 1rem;
+}
+.nr-unitate{
+    background-color: var(--turquoise);
+    flex-shrink: 0;
+    flex-grow: 0!important;
+    color: white;
+    font-size: 20px;
+}
+.titlu-unitate{
+    background-color: var( --beige);
+    padding: 0 1rem;
+    text-align: right;
+    color: var(--turquoise)
+
+}
+.tip-materie{
+    background-color: var( --lightOrange);
+    font-size: 18px;
+    font-weight: normal;
+    flex: 0 0 20%!important;
+    white-space: nowrap;
+}
+.titlu-unitate h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+i {
+    font-family: FontAwesome;
+    font-style: normal;
+}
+.prev-next{
+    position: fixed;
+    bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 6;
+}
+.prev-next div i{
+    color:white;
+}
+.prev-next > *{
+    flex-grow: 0;
+    cursor: pointer;
+    background: red;
+    border-radius: 10px;
+    background-color: var(--turquoise);
+    padding:.5rem 1rem;
+    font-size: 24px;
+    box-shadow: 2px 0 2px -1px rgba(0,0,0,.5)!important;
+}
+.prev-next > *:hover{
+    background-color: var(--orange);
+}
+/* breake points */
+@media (min-width: 0) { 
+    .pagina{
+        max-width: 320px;
+    }
+    .pagini.doubleView {
+        max-width: 320px;
+        display: block;
+    }
+    .page-info.flex{
+            flex-wrap: wrap;
+     }
+     .tip-materie{
+        flex:0 0 calc(100% - 2rem)!important;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media (min-width: 576px) { 
+    .pagina{
+        max-width: 500px;
+    }
+    .pagini.web .pagina{
+        max-width: 320px;
+    }
+    .pagini.doubleView {
+        max-width: 320px;
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) { 
+    .pagina{
+        max-width: 576px;
+    }
+    .pagini.web .pagina{
+        max-width: 576px;
+    }
+    .pagini.doubleView {
+        max-width: 576px;
+    }
+    .page-info.flex{
+       flex-direction: row;
+    }
+    .tip-materie{
+        flex:0 0 20%!important;
+    }
+    .menu{
+        display: block;
+    }
+ }
+
+@media (min-width: 992px) { 
+    .pagina{
+        max-width: 60%;
+    }
+    .pagini.web .pagina{
+        max-width: 768px;
+    }
+    .pagini.doubleView {
+        max-width: 768px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    .pagina{
+        max-width: 50%;
+    }
+    .pagini.web .pagina{
+        max-width: 952px;
+    }
+    .pagini.doubleView {
+    display: flex;
+    }
+ }
+
+ 
+@media (min-width: 1400px) { 
+    .pagini.web .pagina{
+        max-width: 1200px;
+    }
+    .pagini.doubleView {
+        max-width: 1200px;
+    }
+}

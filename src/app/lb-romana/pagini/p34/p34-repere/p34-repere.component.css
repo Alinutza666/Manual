@@ -1,0 +1,15 @@
+.p34-s2-2{
+    cursor: pointer;
+}
+.imagini-coloana{
+    flex: 1 0 40%;
+    display: flex;
+    flex-direction: column;
+}
+.imagini-coloana img{
+    width: 50%;
+    display: block;
+}
+.imagini-coloana img:last-child{
+    margin-left: auto;
+}

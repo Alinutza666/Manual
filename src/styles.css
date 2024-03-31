@@ -1,1 +1,373 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --textColor:#1A1919;
+    --turquoise: #238783;
+    --green: #6F8D3D;
+    --blue: #2D81B6;
+    --pink:#B14A5E;
+    --red:#B9484C;
+    --lightPink: #EBD3CE;
+    --lightYellow:#FFFAE6;
+    --lighterYellow:#FDF3C1;
+    --tan:#F5E8E4;
+    --beige: #F9E09B;
+    --lightOrange: #F1C84C;
+    --brightOrange: #E2A247;
+    --orange: #DE9043;
+    font: 16px RobotoCondensed-Regular;
+    color: var(--textColor);
+}
+/* import fonts */
+@font-face {
+    font-family: AmericanTypewriter;
+    src: url(./assets/fonts/AmericanTypewriter.ttc);
+}
+@font-face {
+    font-family: FiraSansCondensed-Regular;
+    src: url(./assets/fonts/FiraSansCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: IBMPlexSans-Bold;
+    src: url(./assets/fonts/IBMPlexSans-Bold.ttf);
+}
+@font-face {
+    font-family: IBMPlexSans-IBMPlexSans-BoldItalic;
+    src: url(./assets/fonts/IBMPlexSans-BoldItalic.ttf);
+}
+  @font-face {
+    font-family: IBMPlexSans-Italic;
+    src: url(./assets/fonts/IBMPlexSans-Italic.otf);
+  }
+@font-face {
+    font-family: IBMPlexSans-Medium;
+    src: url(./assets/fonts/IBMPlexSans-Medium.ttf);
+}
+@font-face {
+    font-family: IBMPlexSans-Regular;
+    src: url(./assets/fonts/IBMPlexSans-Regular.otf);
+}
+@font-face {
+    font-family: IBMPlexSans-SemiBold;
+    src: url(./assets/fonts/IBMPlexSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: IBMPlexSerif-Bold;
+    src: url(./assets/fonts/IBMPlexSerif-Bold.ttf);
+}
+@font-face {
+    font-family: IBMPlexSerif-Italic;
+    src: url(./assets/fonts/IBMPlexSerif-Italic.ttf);
+}
+@font-face {
+    font-family: IBMPlexSerif-Light;
+    src: url(./assets/fonts/IBMPlexSerif-Light.ttf);
+}
+@font-face {
+    font-family: IBMPlexSerif-Regular;
+    src: url(./assets/fonts/IBMPlexSerif-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoCondensed-Regular;
+    src: url(./assets/fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoSlab-Regular;
+    src: url(./assets/fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: Webdings;
+    src: url(./assets/fonts/Webdings.ttf);
+}
+@font-face {
+    font-family: Wingdings;
+    src: url(./assets/fonts/Wingdings.ttf);
+}
+  /* color classes */
+.turquoise{
+    color: var(--turquoise);
+}
+.green{
+    color: var(--green);
+}
+.blue{
+    color: var(--blue);
+}
+.red{
+    color: var(--red);
+}
+.pink{
+    color: var(--pink);
+}
+.orange{
+    color:var(--orange)
+}
+/* background classes*/
+.beige-background{
+    background-color: var(--beige);
+}
+.lightYellow-background{
+    background-color: var(--lightYellow);
+}
+/* padding classes */
+/* padding360 */
+.p-1{
+    padding: .5rem;;
+}
+/* x axis */
+.p-x-1{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.p-x-2{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* y axis */
+.p-y-1{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.p-y-2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.m-b-2{
+    margin-bottom: 1rem;;
+}
+.m-t-2{
+    margin-top: 1rem;
+}
+.m-r-4{
+    margin-right: 2rem;
+}
+/* display classes */
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+/* clase repetitive */
+.numar-pagina{
+    font-weight: bold;
+    font-size: 24px;
+}
+/* titluri */
+.titlu-principal{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.titlu-small{
+    font-size: 20px;
+    font-weight: normal;
+}
+/* titlu cu iconita si linie simpla*/
+.titlu-iconita{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;;
+}
+.titlu-iconita .iconita{
+    margin-right: 1rem;
+}
+.titlu-iconita .iconita svg{
+    width: 36px;
+}
+.titlu-iconita:after{
+    content:" ";
+    height: 2px;
+    border-bottom:2px;
+    border-top-style: solid;
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+.titlu-iconita.turquoise{
+    border-color: var(--turquoise);
+}
+.titlu-iconita.turquoise .iconita svg path{
+    fill: var(--turquoise);
+}
+.titlu-iconita.turquoise .iconita svg circle{
+    fill: var(--turquoise);
+}
+.titlu-iconita.pink{
+    border-color: var(--pink);
+}
+.titlu-iconita.pink .iconita svg path{
+    fill: var(--pink);
+}
+.titlu-iconita.pink .iconita svg circle{
+    fill: var(--pink);
+}
+/* titlu cu iconita si linie punctata */
+.titlu-dashed{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.titlu-dashed .iconita{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    margin-right: .5rem;
+    font-size: 14px;
+}
+.titlu-dashed .iconita svg{
+    width: 22px;
+}
+.titlu-dashed:after{
+    content:" ";
+    height: 18px;
+    border-top:2px dashed var(--green);
+    border-right:2px dashed var(--green);
+    display: inline-block;
+    flex-grow: 1;
+    margin-top: 18px;
+    margin-left:2rem;
+}
+.titlu-dashed.green .iconita{
+    border-color: var(--green);
+}
+.titlu-dashed.green .iconita svg path{
+    fill: var(--green);
+
+}
+/* titlu repere */
+.titlu-repere{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: .3rem .5rem;
+}
+.titlu-repere.orange{
+    background-color:var(--lighterYellow);
+}
+.titlu-repere .iconita{
+    margin-right: 1rem;
+    background-color: var(--orange);
+    border-radius:50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+}
+.titlu-repere .iconita svg{
+    width: 24px;
+}
+/* lists */
+
+ol.turquoise li::marker{
+    color: var(--turquoise);
+    font-weight: bold;
+    font-size: 20px;
+}
+ol.pink li::marker{
+    color: var(--pink);
+    font-weight: bold;
+    font-size: 20px;
+}
+ol.green li::marker{
+    color: var(--green);
+    font-weight: bold;
+    font-size: 20px;
+}
+ol.turquoise, ol.pink, ol.green {
+    color: unset;
+}
+ol li ul.pink.inline li{
+    display: inline-block;
+    padding:0 1rem;
+    position: relative;
+ }
+ ol li ul.pink.inline li:before{
+     content: " ";
+     width: 8px;
+     height: 8px;
+     background-color: var(--pink);
+     position: absolute;
+     border-radius: 50%;
+     top:50%;
+     bottom:50%;
+     left:0;
+     margin: auto 0;
+ }
+ ol li ul.pink{
+    color: unset;
+ }
+/* highlights */
+.highlight{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+/* buttons */
+.button{
+    padding: .5rem 1rem;
+    border:none;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+}
+.button.turquoise{
+    background-color: var(--turquoise);
+}
+.button.turquoise:hover{
+    background-color: var(--orange);
+}
+/* text indent */
+.t-i-4{
+    text-indent: 2rem;
+}
+div[class^="p-"]{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 8rem);
+}
+.numar-pagina{
+    margin-top: auto!important;
+}
+@media (min-width: 0) { 
+    .flex{
+        flex-wrap: wrap;
+    }
+    .highlight{
+        font-size: 1rem;
+    }
+    .highlight.p-x-2.p-y-1{
+        padding: 0 .5rem!important;
+    }
+    div[class^="p-"]{
+
+        height: auto;
+    }
+}
+@media (min-width: 992px) { 
+    div[class^="p-"]{
+        height: calc(100% - 8rem);
+    }
+
+}
+@media (min-width: 1200px) { 
+    .flex{
+        flex-wrap: nowrap;
+    }
+    .highlight{
+        font-size: 24px;
+    }
+}

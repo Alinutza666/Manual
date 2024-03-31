@@ -1,0 +1,48 @@
+.p-34.zoom > *{
+    display: none;
+}
+.p-34.zoom .zoomedContent{
+    display: block;
+}
+.flex > *{
+    flex-grow: 1;
+}
+.p-34{
+    padding: 2rem;
+}
+ol{
+    margin-left: 2rem;
+}
+ol li{
+    line-height: 20px;
+    padding-bottom: 1rem;;
+}
+.chenar{
+    margin-right: 1rem;
+}
+.chenar ol{
+    border-left:2px dashed var(--green);
+    border-right:2px dashed var(--green);
+    border-bottom:2px dashed var(--green);
+    padding:1rem 1rem 1rem 2rem;
+    margin-top: 2px;
+    margin-left: 0;
+}
+.chenar ol li{
+    padding-bottom: 0;
+}
+img{
+    width: 100%;
+}
+@media (min-width: 0) { 
+    .chenar{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 1200px) {
+    .chenar{
+        margin-right: 1rem;
+        
+    }
+ }

@@ -1,1 +1,50 @@
-<p>pagini works!</p>
+<div class="menu">
+    <ul>
+        <li><i class="fa fa-bars"></i></li>
+        <li><i class="fa fa-question"></i></li>
+        <li><i class="fa fa-arrows-alt"></i></li>
+        <li><i class="fa fa-magic"></i></li>
+        <li (click)="webView()" [ngClass]="{'active': web}"><i class="fa fa-laptop"></i></li>
+        <li (click)="pages()" [ngClass]="{'active': doubleView}"><i class="fa fa-columns"></i></li>
+        <li (click)="onePage()" [ngClass]="{'active': (!doubleView && !web)}"><i class="fa fa-file-o"></i></li>
+        <li><i class="fa fa-edit"></i></li>
+    </ul>
+</div>
+<div class="pagini flex" [ngClass]="{'doubleView': doubleView , 'web': web}">
+<div *ngIf="p34 || doubleView" class="pagina">
+    <div class="page-info flex">
+            <div class="nr-unitate">U1</div>
+            <div class="titlu-unitate">
+                <h1>Acasă, în familie, printre cărți</h1>
+            </div>
+            <div class="tip-materie">
+                <p>Limbă română</p>
+            </div>
+        </div>
+    <app-p34 ></app-p34>
+</div>
+
+<div *ngIf="p35 || doubleView" class="pagina">
+    <div class="page-info flex">
+        <div class="tip-materie">
+            <p>Limbă română</p>
+        </div>
+        
+        <div class="titlu-unitate">
+            <h1>&nbsp;</h1>
+        </div>
+        <div class="nr-unitate">U1</div>
+    </div>
+    <app-p35></app-p35>
+</div>
+
+
+<div class="prev-next">
+    <div class="prev" (click)="prev()">
+        <i class="fa fa-arrow-left"></i>
+    </div>
+    <div class="next" (click)="next()">
+        <i class="fa fa-arrow-right"></i>
+    </div>
+</div>
+</div>
